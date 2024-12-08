@@ -1,0 +1,48 @@
+/* Ads and header section */
+@media (max-width: 576px) {
+    .ads p.ad {
+        font-size: 0.8rem;
+    }
+    .ads .btn {
+        font-size: 0.75rem;
+    }
+    .accordion{
+        margin: 0 !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .ads p.ad {
+        font-size: 1rem;
+    }
+}
+
+/* about and home */
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    .carousel-inner img {
+        height: 50vh;
+    }
+
+    /* training */
+    .trainings h3 {
+        font-size: 1.5rem;
+    }
+
+    .trainings p {
+        font-size: 1rem;
+    }
+
+    .trainings img {
+        max-height: 200px;
+    }
+    .accordion{
+        margin: 0 !important;
+    }
+}
+
