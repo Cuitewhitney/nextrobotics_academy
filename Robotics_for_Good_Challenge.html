@@ -23,32 +23,25 @@
 </head>
 <body>
    <style>
-    .accordion-item, .accordion{
+    /* .accordion-item, .accordion{
         background-color: rgb(240, 237, 237) !important;
        margin-top: 5px;
-    }
+       color: black !important;
+    } */
     .accordion{
-        border: 1px solid black;
+        border: 3px solid black;
         border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin: 0% 25%;
     }
 
-    h2, h5{
-        font-weight: 700;
-        background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
-    }
    </style>
     
     <!-- Header Section -->
     <header class="bg-white">
         <nav class="navbar navbar-expand-lg ">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -134,107 +127,229 @@
                 <div class="carousel-inner text-center">
                     <!-- Ad 1 -->
                     <div class="carousel-item active">
-                        <p class="ad">
-                            <a href="https://forms.gle/i3rKdktXP8hMGxKJA" target="_blank" class="text-warning">Registration</a> to
-                            <span class="fw">the Robotics for Good Youth Challenge 2024 - 2025</span>
-                            <button type="button" class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Register
-                              </button>
-                              <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Register As:</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="container-fluid">
-                                                <div class="row">
-                                                    <div class="col-md-3"><a class="nav-link" href="">Participant</a></div>
-                                                    <div class="col-md-3 ms-auto"><a class="nav-link" href="">Volunteer</a></div>
-                                                    <div class="col-md-3"><a class="nav-link" href="">Partner</a></div>
-                                                    <div class="col-md-3 ms-auto"><a class="nav-link" href="">Sponsor</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>  
-                                </div>
-                            </div>
-                        </p>
-                    </div>
-                            <!-- <a href="youth_challange.html" target="_blank" class="btn btn-sm btn-primary ms-2">Register Now</a>
-                        </p>
-                    </div> -->
+                      <p class="ad">
+                          <a href="https://forms.gle/i3rKdktXP8hMGxKJA" target="_blank" class="text-warning">Registration</a> to
+                          <span class="fw">the Robotics for Good Youth Challenge 2024 - 2025</span>
+                          <button type="button" class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              Register
+                            </button>
+                            <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Register As:</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="container-fluid">
+                                              <div class="row">
+                                                  <div class="col-md-6"><a class="nav-link" href="">
+                                                      <div class="card mb-3" >
+                                                    <img src="image/volunteer_icon.png" class="card-img-top" id="card-img" alt="Volunteer icon">
+                                                    <div class="card-body">
+                                                        <!-- <h5 class="card-title">Programming Academy</h5> -->
+                                                        <button class="btn btn-primary" id="btn_bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProgramming" aria-controls="offcanvasProgramming">
+                                                            Volunteer
+                                                        </button>
+                                                    </div>
+                                                  </div>
+                                                  </a></div>
+                                                  <div class="col-md-6 ms-auto"><a class="nav-link" href="">
+                                                    <div class="card mb-3" >
+                                                      <img src="image/participant_icon.png" class="card-img-top" id="card-img" alt="Volunteer icon">
+                                                      <div class="card-body">
+                                                          <!-- <h5 class="card-title">Programming Academy</h5> -->
+                                                          <button class="btn btn-primary" id="btn_bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProgramming" aria-controls="offcanvasProgramming">
+                                                              Participant
+                                                          </button>
+                                                      </div>
+                                                  </div>
+                                                  </a></div>
+                                                 
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-md-6"><a class="nav-link" href="">
+                                                      <div class="card mb-3" >
+                                                      <img src="image/sponsorship_icon.png" class="card-img-top" id="card-img" alt="Volunteer icon">
+                                                      <div class="card-body">
+                                                          <!-- <h5 class="card-title">Programming Academy</h5> -->
+                                                          <button class="btn btn-primary" id="btn_bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProgramming" aria-controls="offcanvasProgramming">
+                                                              Sponsorship
+                                                          </button>
+                                                      </div>
+                                                  </div>
+                                                  </a></div>
+                                                    <div class="col-md-6 ms-auto"><a class="nav-link" href="">
+                                                      <div class="card mb-3" >
+                                                        <img src="image/partnership_icon.png" class="card-img-top" id="card-img" alt="Volunteer icon">
+                                                              <div class="card-body">
+                                                            <!-- <h5 class="card-title">Programming Academy</h5> -->
+                                                            <button class="btn btn-primary" id="btn_bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProgramming" aria-controls="offcanvasProgramming">
+                                                                Partner
+                                                            </button>
+                                                          </div>
+                                                      </div>
+                                                    </a></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      
+                                  </div>  
+                              </div>
+                          </div>
+                      </p>
+                  </div>
                     <!-- Ad 2 -->
                     <div class="carousel-item">
-                        <p class="ad">
-                            <a href="https://forms.gle/i3rKdktXP8hMGxKJA" target="_blank" class="text-warning">Register</a> as a Volunteer to
-                            <span class="fw">the Robotics for Good Youth Challenge 2024 - 2025</span>
-                            <button type="button" class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Register
-                              </button>
-                              <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Register As:</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="container-fluid">
-                                                <div class="row">
-                                                    <div class="col-md-3"><a class="nav-link" href="">Participant</a></div>
-                                                    <div class="col-md-3 ms-auto"><a class="nav-link" href="">Volunteer</a></div>
-                                                    <div class="col-md-3"><a class="nav-link" href="">Partner</a></div>
-                                                    <div class="col-md-3 ms-auto"><a class="nav-link" href="">Sponsor</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>  
-                                </div>
-                            </div>
-                        </p>
-                    </div>
-                            <!-- <a href="youth_challange.html" target="_blank" class="btn btn-sm btn-primary ms-2">Register Now</a>
-                        </p>
-                    </div> -->
+                      <p class="ad">
+                          <a href="https://forms.gle/i3rKdktXP8hMGxKJA" target="_blank" class="text-warning">Registration</a> to
+                          <span class="fw">the Robotics for Good Youth Challenge 2024 - 2025</span>
+                          <button type="button" class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              Register
+                            </button>
+                            <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Register As:</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="container-fluid">
+                                              <div class="row">
+                                                  <div class="col-md-6"><a class="nav-link" href="">
+                                                      <div class="card mb-3" >
+                                                    <img src="image/volunteer_icon.png" class="card-img-top" id="card-img" alt="Volunteer icon">
+                                                    <div class="card-body">
+                                                        <!-- <h5 class="card-title">Programming Academy</h5> -->
+                                                        <button class="btn btn-primary" id="btn_bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProgramming" aria-controls="offcanvasProgramming">
+                                                            Volunteer
+                                                        </button>
+                                                    </div>
+                                                  </div>
+                                                  </a></div>
+                                                  <div class="col-md-6 ms-auto"><a class="nav-link" href="">
+                                                    <div class="card mb-3" >
+                                                      <img src="image/participant_icon.png" class="card-img-top" id="card-img" alt="Volunteer icon">
+                                                      <div class="card-body">
+                                                          <!-- <h5 class="card-title">Programming Academy</h5> -->
+                                                          <button class="btn btn-primary" id="btn_bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProgramming" aria-controls="offcanvasProgramming">
+                                                              Participant
+                                                          </button>
+                                                      </div>
+                                                  </div>
+                                                  </a></div>
+                                                 
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-md-6"><a class="nav-link" href="">
+                                                      <div class="card mb-3" >
+                                                      <img src="image/sponsorship_icon.png" class="card-img-top" id="card-img" alt="Volunteer icon">
+                                                      <div class="card-body">
+                                                          <!-- <h5 class="card-title">Programming Academy</h5> -->
+                                                          <button class="btn btn-primary" id="btn_bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProgramming" aria-controls="offcanvasProgramming">
+                                                              Sponsorship
+                                                          </button>
+                                                      </div>
+                                                  </div>
+                                                  </a></div>
+                                                    <div class="col-md-6 ms-auto"><a class="nav-link" href="">
+                                                      <div class="card mb-3" >
+                                                        <img src="image/partnership_icon.png" class="card-img-top" id="card-img" alt="Volunteer icon">
+                                                              <div class="card-body">
+                                                            <!-- <h5 class="card-title">Programming Academy</h5> -->
+                                                            <button class="btn btn-primary" id="btn_bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProgramming" aria-controls="offcanvasProgramming">
+                                                                Partner
+                                                            </button>
+                                                          </div>
+                                                      </div>
+                                                    </a></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      
+                                  </div>  
+                              </div>
+                          </div>
+                      </p>
+                  </div>
                     <!-- Ad 3 -->
                     <div class="carousel-item">
-                        <p class="ad">
-                            <a href="https://forms.gle/i3rKdktXP8hMGxKJA" target="_blank" class="text-warning">Register</a> as a Partner to
-                            <span class="fw">the Robotics for Good Youth Challenge 2024 - 2025</span>
-                            <!-- <a href="" target="_blank" class="btn btn-sm btn-primary ms-2">Register Now</a> -->
-                            <button type="button" class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Register
-                              </button>
-                              <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Register As:</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="container-fluid">
-                                                <div class="row">
-                                                    <div class="col-md-3"><a class="nav-link" href="#">Participant</a></div>
-                                                    <div class="col-md-3 ms-auto"><a class="nav-link" href="https://forms.gle/i3rKdktXP8hMGxKJA">Volunteer</a></div>
-                                                    <div class="col-md-3"><a class="nav-link" href="#">Partner</a></div>
-                                                    <div class="col-md-3 ms-auto"><a class="nav-link" href="#">Sponsor</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>  
-                                </div>
-                            </div>
-                        </p>
-                    </div>
+                      <p class="ad">
+                          <a href="https://forms.gle/i3rKdktXP8hMGxKJA" target="_blank" class="text-warning">Registration</a> to
+                          <span class="fw">the Robotics for Good Youth Challenge 2024 - 2025</span>
+                          <button type="button" class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              Register
+                            </button>
+                            <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Register As:</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="container-fluid">
+                                              <div class="row">
+                                                  <div class="col-md-6"><a class="nav-link" href="">
+                                                      <div class="card mb-3" >
+                                                    <img src="image/volunteer_icon.png" class="card-img-top" id="card-img" alt="Volunteer icon">
+                                                    <div class="card-body">
+                                                        <!-- <h5 class="card-title">Programming Academy</h5> -->
+                                                        <button class="btn btn-primary" id="btn_bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProgramming" aria-controls="offcanvasProgramming">
+                                                            Volunteer
+                                                        </button>
+                                                    </div>
+                                                  </div>
+                                                  </a></div>
+                                                  <div class="col-md-6 ms-auto"><a class="nav-link" href="">
+                                                    <div class="card mb-3" >
+                                                      <img src="image/participant_icon.png" class="card-img-top" id="card-img" alt="Volunteer icon">
+                                                      <div class="card-body">
+                                                          <!-- <h5 class="card-title">Programming Academy</h5> -->
+                                                          <button class="btn btn-primary" id="btn_bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProgramming" aria-controls="offcanvasProgramming">
+                                                              Participant
+                                                          </button>
+                                                      </div>
+                                                  </div>
+                                                  </a></div>
+                                                 
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-md-6"><a class="nav-link" href="">
+                                                      <div class="card mb-3" >
+                                                      <img src="image/sponsorship_icon.png" class="card-img-top" id="card-img" alt="Volunteer icon">
+                                                      <div class="card-body">
+                                                          <!-- <h5 class="card-title">Programming Academy</h5> -->
+                                                          <button class="btn btn-primary" id="btn_bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProgramming" aria-controls="offcanvasProgramming">
+                                                              Sponsorship
+                                                          </button>
+                                                      </div>
+                                                  </div>
+                                                  </a></div>
+                                                    <div class="col-md-6 ms-auto"><a class="nav-link" href="">
+                                                      <div class="card mb-3" >
+                                                        <img src="image/partnership_icon.png" class="card-img-top" id="card-img" alt="Volunteer icon">
+                                                              <div class="card-body">
+                                                            <!-- <h5 class="card-title">Programming Academy</h5> -->
+                                                            <button class="btn btn-primary" id="btn_bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProgramming" aria-controls="offcanvasProgramming">
+                                                                Partner
+                                                            </button>
+                                                          </div>
+                                                      </div>
+                                                    </a></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      
+                                  </div>  
+                              </div>
+                          </div>
+                      </p>
+                  </div>
                     <!-- ends -->
                 </div>
             </div> 
@@ -245,7 +360,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-                <h2>Robotics for Good Youth Challenge 2024-2025</h2>
+                <h2 class="mb-3" style="font-weight: 700;">Robotics for Good Youth Challenge 2024-2025</h2>
                 <div class="challenge-description">
                     
                     <p>The Robotics for Good Youth Challenge is a global initiative aimed at empowering students to design, build, and program robotic solutions that address critical global challenges, including those related to the United Nations’ Sustainable Development Goals (SDGs). The Nigerian edition of this challenge will focus on disaster management, encouraging participants to develop innovative solutions for issues like earthquake response, seismic risk prediction, and environmental resilience.</p>
@@ -277,7 +392,7 @@
 >
  <div class="container">
    <div class="text-center mb-4">
-     <h2 class="text-danger">Register for the Challenge</h2>
+     <h2 class="text-white" style="font-weight: 700;">Register for the Challenge</h2>
      <p class="text-secondary">
        Choose your registration type and be part of the robotics
        revolution!
@@ -286,96 +401,96 @@
    <div class="row align-items-center g-4">
      <!-- Volunteer Registration Card -->
      <div class="col-md-3">
-       <div class="card h-100 border-0 shadow-sm bg-dark text-white">
+       <div class="card h-100 border-0 shadow-sm" style="background-color: rgb(247, 246, 242);">
          <img
-           src="image/be_a_volunteer.jpg"
+           src="image/volunteer_icon.png"
            class="card-img-top"
            alt="Volunteer"
          />
          <div class="card-body">
-           <h5 class="card-title text-danger">Volunteer</h5>
+           <h5 class="card-title text-dark" style="font-weight: 700;">Volunteer</h5>
            <p class="card-text">
              Help make the event a success by assisting with logistics,
              guiding participants, and more.
            </p>
            <a
              href="https://forms.gle/i3rKdktXP8hMGxKJA"
-             class="btn btn-danger w-100"
+             class="btn btn-primary w-100"
              data-bs-toggle="modal"
              data-bs-target="#volunteerModal"
-             >Sign Up</a
+             >Register</a
            >
          </div>
        </div>
      </div>
      <!-- Volunteer Registration Card -->
      <div class="col-md-3">
-        <div class="card h-100 border-0 shadow-sm bg-dark text-white">
+        <div class="card h-100 border-0 shadow-sm" style="background-color: rgb(247, 246, 242);">
           <img
-            src="image/be_a_sponsor.jpg"
+            src="image/sponsorship_icon.png"
             class="card-img-top"
             alt="Sponsor"
           />
           <div class="card-body">
-            <h5 class="card-title text-danger">Sponsor</h5>
+            <h5 class="card-title text-dark" style="font-weight: 700;">Sponsor</h5>
             <p class="card-text">
               Help make the event a success by assisting with logistics,
               guiding participants, and more.
             </p>
             <a
               href="#"
-              class="btn btn-danger w-100"
+              class="btn btn-primary w-100"
               data-bs-toggle="modal"
               data-bs-target="#sponsorModal"
-              >Sign Up</a
+              >Register</a
             >
           </div>
         </div>
       </div>
      <!-- Participant Registration Card -->
      <div class="col-md-3">
-       <div class="card h-100 border-0 shadow-sm bg-dark text-white">
+       <div class="card h-100 border-0 shadow-sm" style="background-color: rgb(247, 246, 242);">
          <img
-           src="image/be_a_participant.jpg"
+           src="image/participant_icon.png"
            class="card-img-top"
            alt="Participant"
          />
          <div class="card-body">
-           <h5 class="card-title text-danger">Participant</h5>
+           <h5 class="card-title text-dark" style="font-weight: 700;">Participant</h5>
            <p class="card-text">
              Showcase your innovative skills and compete with other
              robotics enthusiasts.
            </p>
            <a
              href="#"
-             class="btn btn-danger w-100"
+             class="btn btn-primary w-100"
              data-bs-toggle="modal"
              data-bs-target="#participantModal"
-             >Sign Up</a
+             >Register</a
            >
          </div>
        </div>
      </div>
      <!-- Partner Registration Card -->
      <div class="col-md-3">
-       <div class="card h-100 border-0 shadow-sm bg-dark text-white">
+       <div class="card h-100 border-0 shadow-sm" style="background-color: rgb(247, 246, 242);">
          <img
-           src="image/be_a_partner.jpg"
+           src="image/partnership_icon.png"
            class="card-img-top"
            alt="Partner"
          />
          <div class="card-body">
-           <h5 class="card-title text-danger">Partner</h5>
+           <h5 class="card-title text-dark" style="font-weight: 700;">Partner</h5>
            <p class="card-text">
              Support the event and strengthen your brand through
              collaboration and sponsorship.
            </p>
            <a
              href="#"
-             class="btn btn-danger w-100"
+             class="btn btn-primary w-100"
              data-bs-toggle="modal"
              data-bs-target="#partnerModal"
-             >Sign Up</a
+             >Register</a
            >
          </div>
        </div>
@@ -406,215 +521,275 @@
  </div>
 </section>
 
+
  <!-- Frequently Asked Questions Section -->
- <section id="rules" class="py-5 " >
-    <div class="container">
-      <div class="text-center mb-4">
-        <h2 class="text-danger">Frequently Asked Questions</h2>
+<section id="rules" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="text-danger">Frequently Asked Questions</h2>
+    </div>
+    <div class="accordion" id="rulesAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingZero">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseZero"
+            aria-expanded="true"
+            aria-controls="collapseZero"
+            style="font-weight: 700;"
+          >
+            Who can participate in the competition?
+          </button>
+        </h2>
+        <div
+          id="collapseZero"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingZero"
+          data-bs-parent="#rulesAccordion"
+        >
+          <div class="accordion-body">
+            <ul>
+              <li>All upper primary to senior secondary students are qualified to participate in this competition.</li>
+              <li>All regions in Nigeria can participate.</li>
+              <li>Teams can consist of up to 8 members. Individual participation is also allowed.</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="accordion bg-dark text-white" id="rulesAccordion">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingZero">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseZero"
-                aria-expanded="true"
-                aria-controls="collapseZero"
-              >
-              Who can participate in the competition?
-              </button>
-            </h2>
-            <div
-              id="collapseZero"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingZero"
-              data-bs-parent="#rulesAccordion"
-            >
-              <div class="accordion-body">
-                <ul>
-                    <li>All upper primary to senior secondary students are qualified to participate in this competition.</li>
-                    <li>All Regions in Nigeria can participate</li>
-                        
-                    <li>Teams can consist of up to 8 members. Individual participation is also allowed.</li>
-                   
-                </ul>
-              </div>
-            </div>
-          </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-            How to participate in the competition?
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse show"
-            aria-labelledby="headingOne"
-            data-bs-parent="#rulesAccordion"
+        <!-- accordion item 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+            style="font-weight: 700;"
           >
-            <div class="accordion-body">
-                Organize a robotics and coding team with five to ten people on your team to participate. A team needs to be supervised by one to three teachers from their school and have permission from the school to compete.
-            </div>
+          How to participate in the competition?
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse collapsed"
+          aria-labelledby="headingOne"
+          data-bs-parent="#rulesAccordion"
+        >
+          <div class="accordion-body">
+              Organize a robotics and coding team with five to ten people on your team to participate. A team needs to be supervised by one to three teachers from their school and have permission from the school to compete.
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
+      </div>
+      <!-- accordion item 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+            style="font-weight: 700;"
+          >
+          When does this competition open for registration?
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#rulesAccordion"
+        >
+          <div class="accordion-body">
+              Registration is open annually from December 1st to March 31st.  The competition would get in touch with the registered schools.
+          </div>
+        </div>
+      </div>
+       <!-- accordion item 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+            style="font-weight: 700;"
+          >
+          What stages will there be in the competition?
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#rulesAccordion"
+        >
+          <div class="accordion-body">
+              There would be just 2 Phases which include;
+              <ul>
+                  <li>
+                      National Phases: Competitions would be held in Nigeria.</li>
+              
+                  <li>International Phase: Winners of the National Phases would compete for the International Phase which would be held at Geneva, Switzerland.
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+       <!-- accordion item 4 -->
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
             <button
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
+              data-bs-target="#collapseFour"
               aria-expanded="false"
-              aria-controls="collapseTwo"
+              aria-controls="collapseFour"
+              style="font-weight: 700;"
             >
-            When does this competition open for registration?
+            How much is the Registration Fee?
             </button>
           </h2>
           <div
-            id="collapseTwo"
+            id="collapseFour"
             class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
+            aria-labelledby="headingFour"
             data-bs-parent="#rulesAccordion"
           >
             <div class="accordion-body">
-                Registration is open annually from December 1st to March 31st.  The competition would get in touch with the registered schools.
+              Its is ABSOLUTELY FREE. No registration fee is required. However all schools and team are register online.
             </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
+          <h2 class="accordion-header" id="headingFive">
             <button
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
+              data-bs-target="#collapseFive"
               aria-expanded="false"
-              aria-controls="collapseThree"
+              aria-controls="collapseFive"
+              style="font-weight: 700;"
             >
-            What stages will there be in the competition?
+           Where will the competition be held?
             </button>
           </h2>
           <div
-            id="collapseThree"
+            id="collapseFive"
             class="accordion-collapse collapse"
-            aria-labelledby="headingThree"
+            aria-labelledby="headingFive"
             data-bs-parent="#rulesAccordion"
           >
             <div class="accordion-body">
-                There would be just 2 Phases which include;
+                
                 <ul>
                     <li>
-                        National Phases: Competitions would be held in Nigeria.</li>
+                      National Phase would be held in Nigeria.
+
+                      </li>
                 
-                    <li>International Phase: Winners of the National Phases would compete for the International Phase which would be held at Geneva, Switzerland.
+                    <li>The Grand Finale would be held at Geneva, Switzerland.
                     </li>
                 </ul>
             </div>
           </div>
         </div>
+         <!-- accordion item 5 -->
         <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
-              >
-              How much is the Registration Fee?
-              </button>
-            </h2>
-            <div
-              id="collapseFour"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingFour"
-              data-bs-parent="#rulesAccordion"
+          <h2 class="accordion-header" id="headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+              style="font-weight: 700;"
             >
-              <div class="accordion-body">
-                Its is ABSOLUTELY FREE. No registration fee is required. However all schools and team are register online.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFive"
-                aria-expanded="false"
-                aria-controls="collapseFive"
-              >
-             Where will the competition be held?
-              </button>
-            </h2>
-            <div
-              id="collapseFive"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingFive"
-              data-bs-parent="#rulesAccordion"
-            >
-              <div class="accordion-body">
-                  
-                  <ul>
-                      <li>
-                        National Phase would be held in Nigeria.
+            What are the Prizes and Award to be Won?
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSix"
+            data-bs-parent="#rulesAccordion"
+          >
+            <div class="accordion-body">
+                
+                <ul>
+                    <li>National Competition: All winners gets an all expense paid-express ticket to Geneva, Switzerland for the finale.</li>
 
-                        </li>
-                  
-                      <li>The Grand Finale would be held at Geneva, Switzerland.
-                      </li>
-                  </ul>
-              </div>
+                    <li>International Competition: Winner would win prizes for the school and for the members of the winning team.</li>
+                </ul>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSix">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseSix"
-                aria-expanded="false"
-                aria-controls="collapseSix"
-              >
-              What are the Prizes and Award to be Won?
-              </button>
-            </h2>
-            <div
-              id="collapseSix"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingSix"
-              data-bs-parent="#rulesAccordion"
-            >
-              <div class="accordion-body">
-                  
-                  <ul>
-                      <li>National Competition: All winners gets an all expense paid-express ticket to Geneva, Switzerland for the finale.</li>
-
-                      <li>International Competition: Winner would win prizes for the school and for the members of the winning team.</li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-         
-         
-          </div>
-      </div>
-     
+        </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<style>
+  #rules {
+    background-color: #f8f9fa;
+  }
+
+  #rules h2 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .accordion-item {
+    background-color: #ffffff;
+    border: 3px solid #100f0f;
+    border-top: 0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #000 !important;
+  }
+
+  .accordion-header {
+    font-weight: bold;
+  }
+
+  .accordion-button {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 5px;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #f1f1f1;
+  }
+
+  .accordion-body {
+    background-color: #ffffff;
+    color: #000;
+    padding: 15px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  ul li {
+    line-height: 1.8;
+    color: #000;
+  }
+</style>
 
  <!-- Footer -->
  <footer class="text-white py-4" style="background-color: black;">
@@ -626,10 +801,10 @@
       <p class="mb-2">
         Address: Suite F01 Pathfield Mall, 4th Avenue, Gwarinpa. Abuja
       </p>
-      <p class="text-white"><strong>Email:</strong> <a href="mailto:info@nextstemandrobotics.com.ng" class="text-white">info@nextstemandrobotics.com.ng</a></p>
+      <p class="text-white"><strong>Email:</strong> <a href="mailto:roboticsforgood@nextstemandrobotics.com.ng" class="text-white">roboticsforgood@nextstemandrobotics.com.ng</a></p>
       <p class="text-white"><strong>Phone:</strong> +234 809 525 5056 +234 816 142 3829</p>
       <div class="social-icons mt-3">
-        <a href="https://wa.me/+2348095255056/" target="_blank" class="text-white me-3" aria-label="WhatsApp">
+        <a href="https://wa.me/+2348161423829/" target="_blank" class="text-white me-3" aria-label="WhatsApp">
             <i class="fa fa-whatsapp fa-2x"></i>
         </a>
         <a href="https://web.facebook.com/nextrobotics1?mibextid=ZbWKwL&_rdc=1&_rdr" target="_blank" class="text-white me-3" aria-label="Facebook">
@@ -654,7 +829,7 @@
     
     <!-- whatsapp icon fixed -->
     <div id="whatsapp-container">
-        <a href="https://wa.me/+2348095255056/" target="_blank" id="whatsapp-icon">
+        <a href="https://wa.me/+2348161423829/" target="_blank" id="whatsapp-icon">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" id="whatsapp-img">
         </a>
         <span id="chat-text">Chat with us</span>
